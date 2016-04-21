@@ -4,7 +4,7 @@
 #
 Name     : golang-github-tylerb-graceful
 Version  : 9a3d4236b03bb5d26f7951134d248f9d5510d599
-Release  : 1
+Release  : 2
 URL      : https://github.com/tylerb/graceful/archive/9a3d4236b03bb5d26f7951134d248f9d5510d599.tar.gz
 Source0  : https://github.com/tylerb/graceful/archive/9a3d4236b03bb5d26f7951134d248f9d5510d599.tar.gz
 Summary  : No detailed summary available
@@ -24,7 +24,7 @@ graceful [![GoDoc](https://godoc.org/github.com/tylerb/graceful?status.png)](htt
 
 %install
 gopath="/usr/lib/golang"
-library_path="gopkg.in/tylerb/graceful.v1"
+library_path="github.com/tylerb/graceful"
 rm -rf %{buildroot}
 install -d -p %{buildroot}${gopath}/src/${library_path}/
 for file in $(find . -iname "*.go" -o -iname "*.h" -o -iname "*.c") ; do
@@ -39,10 +39,10 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
 gopath="/usr/lib/golang"
 export GOPATH="%{buildroot}${gopath}"
-go test -v -x gopkg.in/tylerb/graceful.v1
+go test -v -x github.com/tylerb/graceful
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/golang/src/gopkg.in/tylerb/graceful.v1/graceful.go
-/usr/lib/golang/src/gopkg.in/tylerb/graceful.v1/graceful_test.go
-/usr/lib/golang/src/gopkg.in/tylerb/graceful.v1/tests/main.go
+/usr/lib/golang/src/github.com/tylerb/graceful/graceful.go
+/usr/lib/golang/src/github.com/tylerb/graceful/graceful_test.go
+/usr/lib/golang/src/github.com/tylerb/graceful/tests/main.go
