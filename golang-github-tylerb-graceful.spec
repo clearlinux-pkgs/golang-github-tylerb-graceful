@@ -4,7 +4,7 @@
 #
 Name     : golang-github-tylerb-graceful
 Version  : 9a3d4236b03bb5d26f7951134d248f9d5510d599
-Release  : 7
+Release  : 8
 URL      : https://github.com/tylerb/graceful/archive/9a3d4236b03bb5d26f7951134d248f9d5510d599.tar.gz
 Source0  : https://github.com/tylerb/graceful/archive/9a3d4236b03bb5d26f7951134d248f9d5510d599.tar.gz
 Summary  : No detailed summary available
